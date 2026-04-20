@@ -25,7 +25,7 @@ type Props = {
  * so it can stay selectable and be localised freely without re-exporting art.
  */
 export function Logo({ iconOnly = false, invert = false, compact = false, markSize = 44, className = "" }: Props) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   return (
     <Link
       href="/"
@@ -35,7 +35,7 @@ export function Logo({ iconOnly = false, invert = false, compact = false, markSi
       <LogoMark size={markSize} />
       {!iconOnly && (
         <span className={`flex flex-col leading-tight ${invert ? "text-white" : "text-ink"}`}>
-          <span className="font-display text-xl font-semibold tracking-tight">
+          <span className={`font-display font-semibold tracking-tight ${locale === "bn" ? "text-xl" : "text-lg"}`}>
             Shawket &amp; Son&apos;s Trading
           </span>
           {!compact && (

@@ -18,7 +18,8 @@ const navItems = [
 
 export function Header() {
   const pathname = usePathname();
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
+  const isBn = locale === "bn";
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -42,8 +43,8 @@ export function Header() {
           : "border-b border-transparent bg-white"
       }`}
     >
-      <div className="container flex h-20 items-center gap-8 lg:h-24">
-        <Logo compact markSize={52} />
+      <div className={`container flex items-center gap-8 ${isBn ? "h-20 lg:h-24" : "h-16 lg:h-20"}`}>
+        <Logo compact markSize={isBn ? 52 : 44} />
         <nav aria-label="Primary" className="hidden flex-1 justify-center xl:flex">
           <ul className="flex items-center gap-1">
             {navItems.map((item) => {
@@ -52,7 +53,7 @@ export function Header() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`whitespace-nowrap rounded-full px-4 py-2.5 text-base font-medium transition ${
+                    className={`whitespace-nowrap rounded-full font-medium transition ${isBn ? "px-4 py-2.5 text-base" : "px-3 py-2 text-sm"} ${
                       active
                         ? "bg-brand-50 text-brand-800"
                         : "text-ink-soft hover:bg-brand-50 hover:text-brand-800"
