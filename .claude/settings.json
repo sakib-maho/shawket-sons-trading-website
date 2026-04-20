@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:shawket-sons-trading-temp-sable.vercel.app)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
