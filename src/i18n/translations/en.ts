@@ -276,9 +276,9 @@ export const en = {
       emailLabel: "Email",
       emailValue: "contact@shawketandsonstrading.com",
       phoneLabel: "Phone",
-      phoneValue: "+81 90-9534-5799",
+      phoneValue: "+8801993590550",
       whatsappLabel: "WhatsApp",
-      whatsappValue: "+81 90-9534-5799",
+      whatsappValue: "+8801993590550",
       japanOfficeLabel: "Japan office",
       japanOfficeValue:
         "Cross Restaurant Kamata, 3-13-11 Kamata, Ota-ku, Tokyo 144-0052, Japan",

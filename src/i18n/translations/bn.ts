@@ -273,9 +273,9 @@ export const bn: Dictionary = {
       emailLabel: "ইমেইল",
       emailValue: "contact@shawketandsonstrading.com",
       phoneLabel: "ফোন",
-      phoneValue: "+81 90-9534-5799",
+      phoneValue: "+8801993590550",
       whatsappLabel: "হোয়াটসঅ্যাপ",
-      whatsappValue: "+81 90-9534-5799",
+      whatsappValue: "+8801993590550",
       japanOfficeLabel: "জাপান অফিস",
       japanOfficeValue:
         "Cross Restaurant Kamata, 3-13-11 Kamata, Ota-ku, Tokyo 144-0052, Japan",
