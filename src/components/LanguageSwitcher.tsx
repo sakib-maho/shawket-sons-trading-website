@@ -36,7 +36,7 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
         className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white px-3.5 py-2 text-sm font-medium text-ink transition hover:border-brand-700 hover:text-brand-700"
       >
         <GlobeIcon className="h-4 w-4" />
-        <span className="hidden sm:inline">{current.native}</span>
+        <span className="hidden whitespace-nowrap sm:inline">{current.native}</span>
         <span className="sm:hidden">{current.flag}</span>
         <ChevronIcon className={`h-3.5 w-3.5 transition ${open ? "rotate-180" : ""}`} />
       </button>

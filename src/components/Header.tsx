@@ -44,7 +44,7 @@ export function Header() {
     >
       <div className="container flex h-16 items-center justify-between gap-4 lg:h-20">
         <Logo compact />
-        <nav aria-label="Primary" className="hidden lg:block">
+        <nav aria-label="Primary" className="hidden xl:block">
           <ul className="flex items-center gap-0.5">
             {navItems.map((item) => {
               const active = isActive(pathname, item.href);
@@ -67,7 +67,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-2">
           <LanguageSwitcher />
-          <Link href="/contact" className="btn-primary hidden whitespace-nowrap md:inline-flex">
+          <Link href="/contact" className="btn-primary hidden whitespace-nowrap xl:inline-flex">
             {t.nav.requestQuote}
           </Link>
           <button
@@ -75,7 +75,7 @@ export function Header() {
             aria-label="Toggle menu"
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((v) => !v)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 text-ink transition hover:border-brand-700 hover:text-brand-700 lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 text-ink transition hover:border-brand-700 hover:text-brand-700 xl:hidden"
           >
             {mobileOpen ? <CloseIcon className="h-5 w-5" /> : <MenuIcon className="h-5 w-5" />}
           </button>
@@ -83,7 +83,7 @@ export function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-ink/5 bg-white lg:hidden">
+        <div className="border-t border-ink/5 bg-white xl:hidden">
           <nav aria-label="Mobile" className="container py-4">
             <ul className="flex flex-col gap-1">
               {navItems.map((item) => {

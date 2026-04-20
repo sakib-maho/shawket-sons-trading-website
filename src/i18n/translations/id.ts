@@ -266,7 +266,8 @@ export const id: Dictionary = {
       messagePlaceholder: "Ceritakan sedikit tentang kebutuhan, pasar tujuan, dan lini waktu Anda.",
       consent: "Saya setuju untuk dihubungi terkait permintaan saya.",
       successTitle: "Terima kasih — permintaan Anda telah kami terima.",
-      successBody: "Tim dagang kami akan segera menghubungi Anda."
+      successBody: "Tim dagang kami akan segera menghubungi Anda.",
+      errorMessage: "Terjadi kesalahan. Silakan coba lagi atau hubungi kami melalui email."
     },
     info: {
       heading: "Detail kontak",

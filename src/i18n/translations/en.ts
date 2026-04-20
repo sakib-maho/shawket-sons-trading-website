@@ -269,7 +269,8 @@ export const en = {
       messagePlaceholder: "Tell us a little about your requirement, target market and timeline.",
       consent: "I agree to be contacted about my inquiry.",
       successTitle: "Thank you — your inquiry has been received.",
-      successBody: "Our trade desk will contact you shortly."
+      successBody: "Our trade desk will contact you shortly.",
+      errorMessage: "Something went wrong. Please try again or email us directly."
     },
     info: {
       heading: "Contact details",

@@ -184,9 +184,7 @@ export function InquiryForm() {
       </button>
 
       {status === "error" && (
-        <p className="text-sm text-red-600">
-          Something went wrong. Please try again or email us directly.
-        </p>
+        <p className="text-sm text-red-600">{t.contact.form.errorMessage}</p>
       )}
     </form>
   );

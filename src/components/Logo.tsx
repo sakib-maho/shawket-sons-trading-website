@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logoMark from "../../public/logo-mark.png";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 type Props = {
   /** Hide the text wordmark — useful for very tight spaces. */
@@ -22,6 +23,7 @@ type Props = {
  * so it can stay selectable and be localised freely without re-exporting art.
  */
 export function Logo({ iconOnly = false, invert = false, compact = false, className = "" }: Props) {
+  const { t } = useLanguage();
   return (
     <Link
       href="/"
@@ -40,7 +42,7 @@ export function Logo({ iconOnly = false, invert = false, compact = false, classN
                 invert ? "text-white/60" : "text-ink-muted"
               }`}
             >
-              Import · Export · Sourcing
+              {t.hero.eyebrow}
             </span>
           )}
         </span>
