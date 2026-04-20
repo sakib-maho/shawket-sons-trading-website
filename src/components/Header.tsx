@@ -42,9 +42,9 @@ export function Header() {
           : "border-b border-transparent bg-white"
       }`}
     >
-      <div className="container flex h-16 items-center justify-between gap-8 lg:h-20">
+      <div className="container flex h-16 items-center gap-8 lg:h-20">
         <Logo compact />
-        <nav aria-label="Primary" className="hidden xl:block">
+        <nav aria-label="Primary" className="hidden flex-1 justify-center xl:flex">
           <ul className="flex items-center gap-0.5">
             {navItems.map((item) => {
               const active = isActive(pathname, item.href);
@@ -65,7 +65,7 @@ export function Header() {
             })}
           </ul>
         </nav>
-        <div className="flex items-center gap-2">
+        <div className="ml-auto flex items-center gap-2">
           <LanguageSwitcher />
           <Link href="/contact" className="btn-primary hidden whitespace-nowrap xl:inline-flex">
             {t.nav.requestQuote}
