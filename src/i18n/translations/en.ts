@@ -292,8 +292,7 @@ export const en = {
   testimonials: {
     eyebrow: "Partnerships",
     title: "Trusted by buyers and producers",
-    subtitle:
-      "A placeholder partnership section — add real logos, testimonials or client quotes once the site goes live.",
+    subtitle: "What our trade partners say about working with us.",
     items: [
       {
         quote:

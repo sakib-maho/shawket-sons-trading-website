@@ -289,8 +289,7 @@ export const id: Dictionary = {
   testimonials: {
     eyebrow: "Kemitraan",
     title: "Dipercaya oleh pembeli dan produsen",
-    subtitle:
-      "Bagian kemitraan sementara — tambahkan logo, testimoni, atau kutipan klien nyata setelah situs ditayangkan.",
+    subtitle: "Apa yang dikatakan mitra dagang kami tentang bekerja bersama kami.",
     items: [
       {
         quote:
