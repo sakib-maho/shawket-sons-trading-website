@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { Reveal } from "./Reveal";
@@ -64,21 +65,19 @@ export function Hero() {
 function HeroVisual() {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-md lg:max-w-none">
-      <div className="absolute inset-0 overflow-hidden rounded-[28px] bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 shadow-card-hover">
-        <div className="absolute inset-0 opacity-40 [background:radial-gradient(circle_at_25%_20%,rgba(255,255,255,0.3),transparent_45%),radial-gradient(circle_at_75%_80%,rgba(255,255,255,0.2),transparent_55%)]" />
-        <svg
-          viewBox="0 0 400 400"
-          className="absolute inset-0 h-full w-full text-white/15"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1"
+      <div className="absolute inset-0 overflow-hidden rounded-[28px] shadow-card-hover">
+        <Image
+          src="/images/products/whole-betel-nut.jpg"
+          alt="Premium whole dried betel nuts from Bangladesh"
+          fill
+          sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 40vw"
+          className="object-cover"
+          priority
+        />
+        <div
           aria-hidden
-        >
-          <circle cx="200" cy="200" r="140" />
-          <circle cx="200" cy="200" r="100" />
-          <circle cx="200" cy="200" r="60" />
-          <path d="M60 200 H340 M200 60 V340" />
-        </svg>
+          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-900/30 to-transparent"
+        />
         <div className="absolute inset-x-6 bottom-6 flex items-end justify-between text-white">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-white/70">

@@ -4,14 +4,9 @@ import type { ProductCardData } from "@/components/ProductCard";
 /**
  * Central product catalogue.
  *
- * Product photos use Unsplash (real photography, not AI-generated). Unsplash
- * License allows commercial use — replace with your own shots when ready.
- * To swap an image, change `imageId` below (format: `{timestamp}-{hash}`).
- *
- * To add a new product:
- *   1. Add a translation entry in `src/i18n/translations/en.ts` under `products.items`
- *      (and update every other language file to match).
- *   2. Add an entry in this array with a stable `id`, `imageId`, translation key, etc.
+ * Product photos use Wikimedia Commons (real photography, freely licensed).
+ * To swap an image, change `imageUrl` to a direct absolute URL, or use
+ * `imageId` for Unsplash photos (format: `{timestamp}-{hash}`).
  */
 
 /** Build a cropped, optimised Unsplash URL for `next/image`. */
@@ -20,8 +15,10 @@ function unsplashPhoto(imageId: string, w = 900, h = 675) {
 }
 
 export type ProductDefinition = Omit<ProductCardData, "name" | "desc" | "imageSrc"> & {
-  /** Unsplash asset id only (without the `photo-` prefix). */
-  imageId: string;
+  /** Direct absolute image URL — takes priority over imageId. */
+  imageUrl?: string;
+  /** Unsplash asset id only (without the `photo-` prefix). Used when imageUrl is absent. */
+  imageId?: string;
   /** Translation key under t.products.items */
   translationKey: keyof Dictionary["products"]["items"];
   featured?: boolean;
@@ -31,31 +28,36 @@ export const products: ProductDefinition[] = [
   {
     id: "betel-nut",
     translationKey: "betelNut",
-    imageId: "1599599810769-bcde5a160d32",
+    // Fresh areca nut close-up (Wikimedia Commons, public domain)
+    imageUrl: "/images/products/betel-nut.jpg",
     featured: true
   },
   {
     id: "whole-betel-nut",
     translationKey: "wholeBetelNut",
-    imageId: "1596040033229-a9821ebd058d",
+    // Whole dried betel nuts in a basket from Bangladesh (Wikimedia Commons, CC BY-SA 4.0)
+    imageUrl: "/images/products/whole-betel-nut.jpg",
     featured: true
   },
   {
     id: "split-betel-nut",
     translationKey: "splitBetelNut",
-    imageId: "1559056199-641a0ac8b55e",
+    // Commercial-scale sun-drying of areca nuts (Wikimedia Commons, CC BY-SA 3.0)
+    imageUrl: "/images/products/split-betel-nut.jpg",
     featured: true
   },
   {
     id: "spices",
     translationKey: "spices",
-    imageId: "1514432324607-a09d9b4aefdd",
+    // Indonesian spices in Bali woven baskets — cinnamon, cloves, pepper, turmeric (Wikimedia Commons, CC BY-SA 4.0)
+    imageUrl: "/images/products/spices.jpg",
     upcoming: true
   },
   {
     id: "agro-commodities",
     translationKey: "agro",
-    imageId: "1519681393784-d120267933ba",
+    // Roasted coffee beans — Wikipedia featured picture (Wikimedia Commons, public domain)
+    imageUrl: "/images/products/agro-commodities.jpg",
     upcoming: true
   },
   {
@@ -69,7 +71,7 @@ export const products: ProductDefinition[] = [
 /** Hydrate a product definition with translated copy for the active locale. */
 export function resolveProduct(p: ProductDefinition, t: Dictionary): ProductCardData {
   const entry = t.products.items[p.translationKey];
-  const imageSrc = unsplashPhoto(p.imageId);
+  const imageSrc = p.imageUrl ?? (p.imageId ? unsplashPhoto(p.imageId) : "");
   return {
     id: p.id,
     upcoming: p.upcoming,
