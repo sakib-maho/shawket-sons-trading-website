@@ -42,7 +42,7 @@ export function Header() {
           : "border-b border-transparent bg-white"
       }`}
     >
-      <div className="container flex h-16 items-center justify-between gap-4 lg:h-20">
+      <div className="container flex h-16 items-center justify-between gap-8 lg:h-20">
         <Logo compact />
         <nav aria-label="Primary" className="hidden xl:block">
           <ul className="flex items-center gap-0.5">
