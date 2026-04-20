@@ -63,7 +63,7 @@ export const products: ProductDefinition[] = [
   {
     id: "general-imports",
     translationKey: "general",
-    imageId: "1586528116311-ad8dd3c8310d",
+    imageUrl: "/images/products/general-imports.jpg",
     upcoming: true
   }
 ];

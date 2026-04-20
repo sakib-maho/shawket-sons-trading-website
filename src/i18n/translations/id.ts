@@ -31,6 +31,22 @@ export const id: Dictionary = {
     sending: "Mengirim...",
     required: "Wajib diisi"
   },
+  heroVisual: {
+    route: "Indonesia → Bangladesh",
+    productName: "Pinang Premium",
+    verified: "Terverifikasi",
+    liveShipment: "Pengiriman aktif",
+    containers: "2 × kontainer 20ft",
+    origin: "Surabaya → Chattogram",
+    qualityGraded: "Grading kualitas",
+    grade: "A / AA premium"
+  },
+  notFound: {
+    eyebrow: "404",
+    title: "Halaman tidak ditemukan",
+    body: "Halaman yang Anda cari tidak ada. Mungkin telah dipindahkan, diganti nama, atau belum dipublikasikan.",
+    back: "Kembali ke beranda"
+  },
   hero: {
     eyebrow: "Impor · Ekspor · Pengadaan",
     title: "Mitra dagang terpercaya antara Indonesia dan Bangladesh.",

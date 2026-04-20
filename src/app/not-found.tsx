@@ -1,17 +1,18 @@
+"use client";
+
 import Link from "next/link";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 export default function NotFound() {
+  const { t } = useLanguage();
   return (
     <section className="section">
       <div className="container max-w-xl text-center">
-        <span className="eyebrow mx-auto">404</span>
-        <h1 className="heading-lg mt-5">Page not found</h1>
-        <p className="lead mt-4">
-          The page you are looking for does not exist. It may have been moved, renamed, or is not
-          yet published.
-        </p>
+        <span className="eyebrow mx-auto">{t.notFound.eyebrow}</span>
+        <h1 className="heading-lg mt-5">{t.notFound.title}</h1>
+        <p className="lead mt-4">{t.notFound.body}</p>
         <Link href="/" className="btn-primary mt-8">
-          Back to home
+          {t.notFound.back}
         </Link>
       </div>
     </section>

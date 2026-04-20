@@ -63,6 +63,8 @@ export function Hero() {
 }
 
 function HeroVisual() {
+  const { t } = useLanguage();
+  const v = t.heroVisual;
   return (
     <div className="relative mx-auto aspect-square w-full max-w-md lg:max-w-none">
       <div className="absolute inset-0 overflow-hidden rounded-[28px] shadow-card-hover">
@@ -81,27 +83,27 @@ function HeroVisual() {
         <div className="absolute inset-x-6 bottom-6 flex items-end justify-between text-white">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-white/70">
-              Indonesia → Bangladesh
+              {v.route}
             </p>
-            <p className="mt-1 font-display text-2xl font-semibold">Premium Betel Nut</p>
+            <p className="mt-1 font-display text-2xl font-semibold">{v.productName}</p>
           </div>
           <span className="rounded-full border border-white/40 bg-black/40 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-widest text-white backdrop-blur-sm">
-            Verified
+            {v.verified}
           </span>
         </div>
       </div>
       <div className="absolute -left-4 top-8 hidden rounded-2xl border border-ink/5 bg-white p-4 shadow-card sm:block lg:-left-10">
         <p className="text-[11px] font-semibold uppercase tracking-widest text-brand-700">
-          Live shipment
+          {v.liveShipment}
         </p>
-        <p className="mt-1 font-display text-lg font-semibold text-ink">2 × 20ft containers</p>
-        <p className="text-xs text-ink-muted">Surabaya → Chattogram</p>
+        <p className="mt-1 font-display text-lg font-semibold text-ink">{v.containers}</p>
+        <p className="text-xs text-ink-muted">{v.origin}</p>
       </div>
       <div className="absolute -right-3 bottom-10 hidden rounded-2xl border border-ink/5 bg-white p-4 shadow-card sm:block lg:-right-8">
         <p className="text-[11px] font-semibold uppercase tracking-widest text-brand-700">
-          Quality graded
+          {v.qualityGraded}
         </p>
-        <p className="mt-1 font-display text-lg font-semibold text-ink">A / AA premium</p>
+        <p className="mt-1 font-display text-lg font-semibold text-ink">{v.grade}</p>
       </div>
     </div>
   );

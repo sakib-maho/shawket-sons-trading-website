@@ -34,6 +34,22 @@ export const en = {
     sending: "Sending...",
     required: "Required"
   },
+  heroVisual: {
+    route: "Indonesia → Bangladesh",
+    productName: "Premium Betel Nut",
+    verified: "Verified",
+    liveShipment: "Live shipment",
+    containers: "2 × 20ft containers",
+    origin: "Surabaya → Chattogram",
+    qualityGraded: "Quality graded",
+    grade: "A / AA premium"
+  },
+  notFound: {
+    eyebrow: "404",
+    title: "Page not found",
+    body: "The page you are looking for does not exist. It may have been moved, renamed, or is not yet published.",
+    back: "Back to home"
+  },
   hero: {
     eyebrow: "Import · Export · Sourcing",
     title: "A trusted trade partner between Indonesia and Bangladesh.",
