@@ -60,8 +60,7 @@ export function AboutView() {
       <section className="section">
         <div className="container">
           <Reveal>
-            <span className="eyebrow">{t.about.hero.eyebrow}</span>
-            <h2 className="heading-lg mt-4 max-w-3xl">{t.about.markets.title}</h2>
+            <h2 className="heading-lg max-w-3xl">{t.about.markets.title}</h2>
           </Reveal>
           <ul className="mt-10 grid gap-5 md:grid-cols-3">
             {t.about.markets.items.map((item, i) => (
