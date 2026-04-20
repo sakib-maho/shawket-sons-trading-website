@@ -85,7 +85,7 @@ function HeroVisual() {
             </p>
             <p className="mt-1 font-display text-2xl font-semibold">Premium Betel Nut</p>
           </div>
-          <span className="rounded-full border border-white/30 px-3 py-1 text-[11px] font-medium uppercase tracking-widest">
+          <span className="rounded-full border border-white/40 bg-black/40 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-widest text-white backdrop-blur-sm">
             Verified
           </span>
         </div>
