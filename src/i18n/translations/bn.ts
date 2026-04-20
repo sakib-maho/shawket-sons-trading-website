@@ -9,8 +9,8 @@ export const bn: Dictionary = {
   },
   nav: {
     home: "হোম",
-    about: "আমাদের সম্পর্কে",
-    products: "পণ্যসমূহ",
+    about: "সম্পর্কে",
+    products: "পণ্য",
     services: "সেবা",
     whyUs: "কেন আমরা",
     contact: "যোগাযোগ",
