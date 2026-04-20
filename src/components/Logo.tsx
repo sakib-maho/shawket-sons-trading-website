@@ -12,6 +12,8 @@ type Props = {
   invert?: boolean;
   /** Smaller compact form without the tagline under the wordmark. */
   compact?: boolean;
+  /** Size of the logo mark in px. */
+  markSize?: number;
   className?: string;
 };
 
@@ -22,7 +24,7 @@ type Props = {
  * (`public/logo-mark.png`, 1024×1024 for retina). The wordmark is plain HTML
  * so it can stay selectable and be localised freely without re-exporting art.
  */
-export function Logo({ iconOnly = false, invert = false, compact = false, className = "" }: Props) {
+export function Logo({ iconOnly = false, invert = false, compact = false, markSize = 44, className = "" }: Props) {
   const { t } = useLanguage();
   return (
     <Link
@@ -30,10 +32,10 @@ export function Logo({ iconOnly = false, invert = false, compact = false, classN
       aria-label="Shawket & Son's Trading — home"
       className={`group inline-flex items-center gap-3 ${className}`}
     >
-      <LogoMark size={44} />
+      <LogoMark size={markSize} />
       {!iconOnly && (
         <span className={`flex flex-col leading-tight ${invert ? "text-white" : "text-ink"}`}>
-          <span className="font-display text-lg font-semibold tracking-tight">
+          <span className="font-display text-xl font-semibold tracking-tight">
             Shawket &amp; Son&apos;s Trading
           </span>
           {!compact && (
