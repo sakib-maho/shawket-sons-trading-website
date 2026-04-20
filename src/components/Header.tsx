@@ -45,14 +45,14 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between gap-4 lg:h-20">
         <Logo compact />
         <nav aria-label="Primary" className="hidden lg:block">
-          <ul className="flex items-center gap-1">
+          <ul className="flex items-center gap-0.5">
             {navItems.map((item) => {
               const active = isActive(pathname, item.href);
               return (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+                    className={`whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition ${
                       active
                         ? "bg-brand-50 text-brand-800"
                         : "text-ink-soft hover:bg-brand-50 hover:text-brand-800"
@@ -67,7 +67,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-2">
           <LanguageSwitcher />
-          <Link href="/contact" className="btn-primary hidden md:inline-flex">
+          <Link href="/contact" className="btn-primary hidden whitespace-nowrap md:inline-flex">
             {t.nav.requestQuote}
           </Link>
           <button
