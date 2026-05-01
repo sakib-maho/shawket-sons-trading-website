@@ -99,7 +99,7 @@ function HeroVisual() {
         <p className="mt-1 font-display text-lg font-semibold text-ink">{v.containers}</p>
         <p className="text-xs text-ink-muted">{v.origin}</p>
       </div>
-      <div className="absolute -right-3 bottom-1/3 z-10 hidden rounded-2xl border border-ink/5 bg-white p-4 shadow-card sm:block lg:-right-8">
+      <div className="absolute -right-3 bottom-20 z-10 hidden rounded-2xl border border-ink/5 bg-white p-4 shadow-card sm:block lg:-right-8">
         <p className="text-[11px] font-semibold uppercase tracking-widest text-brand-700">
           {v.qualityGraded}
         </p>
