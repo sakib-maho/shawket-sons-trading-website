@@ -73,7 +73,7 @@ export function Header() {
           </Link>
           <button
             type="button"
-            aria-label="Toggle menu"
+            aria-label={t.common.toggleMenu}
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((v) => !v)}
             className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 text-ink transition hover:border-brand-700 hover:text-brand-700 xl:hidden"

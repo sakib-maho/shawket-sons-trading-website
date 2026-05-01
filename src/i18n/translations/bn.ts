@@ -29,7 +29,9 @@ export const bn: Dictionary = {
     address: "ঠিকানা",
     submit: "অনুসন্ধান জমা দিন",
     sending: "পাঠানো হচ্ছে...",
-    required: "আবশ্যক"
+    required: "আবশ্যক",
+    toggleMenu: "মেনু খুলুন/বন্ধ করুন",
+    whatsappGreeting: "হ্যালো Shawket & Son's Trading"
   },
   heroVisual: {
     route: "ইন্দোনেশিয়া → বাংলাদেশ",
@@ -39,7 +41,8 @@ export const bn: Dictionary = {
     containers: "২ × ২০ফুট কনটেইনার",
     origin: "সুরাবায়া → চট্টগ্রাম",
     qualityGraded: "মান গ্রেডেড",
-    grade: "এ / এএ প্রিমিয়াম"
+    grade: "এ / এএ প্রিমিয়াম",
+    imageAlt: "ইন্দোনেশিয়া থেকে সংগৃহীত প্রিমিয়াম শুকনো গোটা সুপারি"
   },
   notFound: {
     eyebrow: "404",

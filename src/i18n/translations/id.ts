@@ -29,7 +29,9 @@ export const id: Dictionary = {
     address: "Alamat",
     submit: "Kirim Permintaan",
     sending: "Mengirim...",
-    required: "Wajib diisi"
+    required: "Wajib diisi",
+    toggleMenu: "Buka/tutup menu",
+    whatsappGreeting: "Halo Shawket & Son's Trading"
   },
   heroVisual: {
     route: "Indonesia → Bangladesh",
@@ -39,7 +41,8 @@ export const id: Dictionary = {
     containers: "2 × kontainer 20ft",
     origin: "Surabaya → Chattogram",
     qualityGraded: "Grading kualitas",
-    grade: "A / AA premium"
+    grade: "A / AA premium",
+    imageAlt: "Pinang utuh kering premium yang bersumber dari Indonesia"
   },
   notFound: {
     eyebrow: "404",

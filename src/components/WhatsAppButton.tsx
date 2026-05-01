@@ -12,7 +12,7 @@ export function WhatsAppButton() {
   const digits = raw.replace(/[^0-9]/g, "");
   const href = digits
     ? `https://wa.me/${digits}`
-    : `https://wa.me/?text=${encodeURIComponent("Hello Shawket & Son's Trading")}`;
+    : `https://wa.me/?text=${encodeURIComponent(t.common.whatsappGreeting)}`;
 
   return (
     <a

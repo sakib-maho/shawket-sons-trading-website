@@ -32,7 +32,9 @@ export const en = {
     address: "Address",
     submit: "Submit Inquiry",
     sending: "Sending...",
-    required: "Required"
+    required: "Required",
+    toggleMenu: "Toggle menu",
+    whatsappGreeting: "Hello Shawket & Son's Trading"
   },
   heroVisual: {
     route: "Indonesia → Bangladesh",
@@ -42,7 +44,8 @@ export const en = {
     containers: "2 × 20ft containers",
     origin: "Surabaya → Chattogram",
     qualityGraded: "Quality graded",
-    grade: "A / AA premium"
+    grade: "A / AA premium",
+    imageAlt: "Premium whole dried betel nuts sourced from Indonesia"
   },
   notFound: {
     eyebrow: "404",

@@ -70,7 +70,7 @@ function HeroVisual() {
       <div className="absolute inset-0 overflow-hidden rounded-[28px] shadow-card-hover">
         <Image
           src="/images/products/whole-betel-nut.jpg"
-          alt="Premium whole dried betel nuts from Bangladesh"
+          alt={v.imageAlt}
           fill
           sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 40vw"
           className="object-cover"
