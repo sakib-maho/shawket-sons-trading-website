@@ -134,7 +134,9 @@ export const en = {
     role: "Director — International Operations & Technology",
     location: "Tokyo, Japan",
     bio: "Robiul Islam Sakib leads Shawket & Son's Trading's international operations from Tokyo. With a background spanning technology and cross-border commerce, he oversees supplier coordination, logistics, and the company's digital infrastructure — bridging Indonesia, Bangladesh and Japan with precision and care.",
-    languages: "English · Japanese · Bengali"
+    quote: "Good trade is built on trust, not just transactions. We stand behind every shipment — personally.",
+    languages: "English · Japanese · Bengali",
+    linkedinLabel: "Connect on LinkedIn"
   },
   about: {
     hero: {
