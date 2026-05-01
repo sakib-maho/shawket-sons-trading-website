@@ -8,3 +8,5 @@ out
 .vercel
 
 *.tsbuildinfo
+*.pdf
+*.PNG
