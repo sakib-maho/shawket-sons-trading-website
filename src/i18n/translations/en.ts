@@ -127,6 +127,15 @@ export const en = {
       "Share a few details and our trade desk will get back within one business day.",
     cta: "Go to contact page"
   },
+  founder: {
+    eyebrow: "Leadership",
+    title: "The person behind the trade",
+    name: "Md Robiul Islam Sakib",
+    role: "Director — International Operations & Technology",
+    location: "Tokyo, Japan",
+    bio: "Robiul Islam Sakib leads Shawket & Son's Trading's international operations from Tokyo. With a background spanning technology and cross-border commerce, he oversees supplier coordination, logistics, and the company's digital infrastructure — bridging Indonesia, Bangladesh and Japan with precision and care.",
+    languages: "English · Japanese · Bengali"
+  },
   about: {
     hero: {
       eyebrow: "About us",

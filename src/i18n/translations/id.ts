@@ -124,6 +124,15 @@ export const id: Dictionary = {
       "Sampaikan beberapa detail dan tim dagang kami akan membalas dalam satu hari kerja.",
     cta: "Ke halaman kontak"
   },
+  founder: {
+    eyebrow: "Kepemimpinan",
+    title: "Sosok di balik perdagangan",
+    name: "Md Robiul Islam Sakib",
+    role: "Direktur — Operasi Internasional & Teknologi",
+    location: "Tokyo, Jepang",
+    bio: "Robiul Islam Sakib memimpin operasi internasional Shawket & Son's Trading dari Tokyo. Dengan latar belakang teknologi dan perdagangan lintas batas, ia mengawasi koordinasi pemasok, logistik, dan infrastruktur digital perusahaan — menghubungkan Indonesia, Bangladesh, dan Jepang dengan presisi dan dedikasi.",
+    languages: "Inggris · Jepang · Bengali"
+  },
   about: {
     hero: {
       eyebrow: "Tentang kami",

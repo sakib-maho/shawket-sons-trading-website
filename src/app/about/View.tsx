@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
@@ -57,7 +58,44 @@ export function AboutView() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section border-t border-ink/5">
+        <div className="container">
+          <Reveal>
+            <span className="eyebrow">{t.founder.eyebrow}</span>
+            <h2 className="heading-lg mt-4 max-w-2xl">{t.founder.title}</h2>
+          </Reveal>
+          <Reveal delay={100}>
+            <div className="mt-10 flex flex-col gap-8 rounded-2xl border border-ink/5 bg-white p-8 shadow-card sm:flex-row sm:items-start sm:gap-10">
+              <div className="flex-shrink-0">
+                <div className="relative h-32 w-32 overflow-hidden rounded-2xl sm:h-40 sm:w-40">
+                  <Image
+                    src="/images/team/sakib.jpg"
+                    alt={t.founder.name}
+                    fill
+                    sizes="160px"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-brand-700">
+                  {t.founder.location}
+                </p>
+                <h3 className="mt-2 font-display text-2xl font-semibold text-ink">
+                  {t.founder.name}
+                </h3>
+                <p className="mt-1 text-sm font-medium text-ink-soft">{t.founder.role}</p>
+                <p className="mt-4 max-w-xl leading-relaxed text-ink-soft">{t.founder.bio}</p>
+                <p className="mt-4 text-xs font-medium uppercase tracking-wider text-ink-muted">
+                  {t.founder.languages}
+                </p>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section border-t border-ink/5">
         <div className="container">
           <Reveal>
             <h2 className="heading-lg max-w-3xl">{t.about.markets.title}</h2>
